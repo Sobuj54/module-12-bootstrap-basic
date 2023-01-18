@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>accordion</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+  </head>
+  <body>
+    <h1>how are you?</h1>
+    <!-- using accordion -->
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne"
+            aria-expanded="false"
+            aria-controls="flush-collapseOne"
+          >
+            Who should join this course?
+          </button>
+        </h2>
+        <div
+          id="flush-collapseOne"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingOne"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            Placeholder content for this accordion, which is intended to
+            demonstrate the
+            <code>.accordion-flush</code>
+            class. This is the first item's accordion body.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo"
+            aria-expanded="false"
+            aria-controls="flush-collapseTwo"
+          >
+            Why is this course important?
+          </button>
+        </h2>
+        <div
+          id="flush-collapseTwo"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingTwo"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            Placeholder content for this accordion, which is intended to
+            demonstrate the
+            <code>.accordion-flush</code>
+            class. This is the second item's accordion body. Let's imagine this
+            being filled with some actual content.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThree"
+            aria-expanded="false"
+            aria-controls="flush-collapseThree"
+          >
+            How to enroll?
+          </button>
+        </h2>
+        <div
+          id="flush-collapseThree"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingThree"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            Placeholder content for this accordion, which is intended to
+            demonstrate the
+            <code>.accordion-flush</code>
+            class. This is the third item's accordion body. Nothing more
+            exciting happening here in terms of content, but just filling up the
+            space to make it look, at least at first glance, a bit more
+            representative of how this would look in a real-world application.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTFour"
+            aria-expanded="false"
+            aria-controls="flush-collapseTFour"
+          >
+            Any question?
+          </button>
+        </h2>
+        <div
+          id="flush-collapseTFour"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingThree"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            Placeholder content for this accordion, which is intended to
+            demonstrate the
+            <code>.accordion-flush</code>
+            class. This is the third item's accordion body. Nothing more
+            exciting happening here in terms of content, but just filling up the
+            space to make it look, at least at first glance, a bit more
+            representative of how this would look in a real-world application.
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- using badges notification -->
+    <button type="button" class="btn btn-primary position-relative">
+      Inbox
+      <span
+        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+      >
+        99+
+        <span class="visually-hidden">unread messages</span>
+      </span>
+    </button>
+
+    <!-- using pagination which means traversing through pages -->
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      </ul>
+    </nav>
+
+    <!-- using tooltip which is when hover mouse ober anything more details will show up -->
+    <button
+      type="button"
+      class="btn btn-secondary"
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      data-bs-custom-class="custom-tooltip"
+      data-bs-title="This top tooltip is themed via CSS variables."
+    >
+      Custom tooltip
+    </button>
+
+    <!-- scrollspy which shows which part are we in when we are scrolling -->
+    <div class="row">
+      <div class="col-4">
+        <nav
+          id="navbar-example3"
+          class="h-100 flex-column align-items-stretch pe-4 border-end"
+        >
+          <nav class="nav nav-pills flex-column">
+            <a class="nav-link" href="#item-1">Item 1</a>
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
+              <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
+            </nav>
+            <a class="nav-link" href="#item-2">Item 2</a>
+            <a class="nav-link" href="#item-3">Item 3</a>
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
+              <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+            </nav>
+          </nav>
+        </nav>
+      </div>
+
+      <div class="col-8">
+        <div
+          data-bs-spy="scroll"
+          data-bs-target="#navbar-example3"
+          data-bs-smooth-scroll="true"
+          class="scrollspy-example-2"
+          tabindex="0"
+        >
+          <div id="item-1">
+            <h4>Item 1</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi unde
+              alias natus voluptatem blanditiis dolore exercitationem officia,
+              quaerat maxime fuga voluptate praesentium quisquam reiciendis
+              debitis ex recusandae modi tempore provident quo dolor laudantium!
+              Recusandae suscipit eius unde modi esse eaque ullam. Illo
+              laboriosam sint voluptatum deserunt, illum vero necessitatibus
+              esse?
+            </p>
+          </div>
+          <div id="item-1-1">
+            <h5>Item 1-1</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+              sapiente libero, itaque et minima ullam possimus incidunt
+              obcaecati atque repellat error aliquam ratione magnam
+              exercitationem magni perspiciatis qui animi quibusdam. Nesciunt
+              odit nam corporis eveniet ad ab deleniti provident eum suscipit ea
+              vel praesentium vitae, eos, eligendi officia esse voluptatum!
+            </p>
+          </div>
+          <div id="item-1-2">
+            <h5>Item 1-2</h5>
+            <p>lorem50</p>
+          </div>
+          <div id="item-2">
+            <h4>Item 2</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus a recusandae nisi pariatur, praesentium voluptas
+              unde eaque laborum totam repellendus perspiciatis modi dolor
+              incidunt? Earum ipsam reprehenderit hic dolor tempora obcaecati
+              libero possimus repellendus. Sunt autem deserunt dolores, minus
+              recusandae provident veniam, hic esse voluptas consequuntur
+              similique corrupti ratione nisi.
+            </p>
+          </div>
+          <div id="item-3">
+            <h4>Item 3</h4>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Similique repellat suscipit ipsum, obcaecati illum iste nesciunt
+              mollitia inventore. Doloribus amet dolorum dicta, non atque iure
+              tempora cum pariatur explicabo praesentium laboriosam vero, in
+              eligendi aspernatur deleniti dolore, eum minima culpa quam ut quis
+              maiores delectus ullam aut. Voluptate, quis laudantium!
+            </p>
+          </div>
+          <div id="item-3-1">
+            <h5>Item 3-1</h5>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Similique repellat suscipit ipsum, obcaecati illum iste nesciunt
+              mollitia inventore. Doloribus amet dolorum dicta, non atque iure
+              tempora cum pariatur explicabo praesentium laboriosam vero, in
+              eligendi aspernatur deleniti dolore, eum minima culpa quam ut quis
+              maiores delectus ullam aut. Voluptate, quis laudantium!
+            </p>
+          </div>
+          <div id="item-3-2">
+            <h5>Item 3-2</h5>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Similique repellat suscipit ipsum, obcaecati illum iste nesciunt
+              mollitia inventore. Doloribus amet dolorum dicta, non atque iure
+              tempora cum pariatur explicabo praesentium laboriosam vero, in
+              eligendi aspernatur deleniti dolore, eum minima culpa quam ut quis
+              maiores delectus ullam aut. Voluptate, quis laudantium!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- js link -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
